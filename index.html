@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pets Adoption</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Please fill in the following information:</h2>
+          <form id="pets">
+            <div class="form-group">
+              <label for="animals">Type of animals:</label>
+              <select class="form-control" id="type">
+                <option value="dog">Dogs</option>
+                <option value="cat">Cats</option>
+                <option value="bird">Birds</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="status">Status</label>
+                <input type="radio" name="status" value="available" checked>
+                  Available
+                <input type="radio" name="status" value="adopted">
+                  Adopted
+            </div>
+
+            <div class="form-group">
+              <label for="name">Name of the animal</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age of animal</label>
+              <input type="text" class="form-control" id="age">
+            </div>
+
+            <div class="form-group">
+              <label for="color">Color of animal</label>
+              <input type="text" class="form-control" id="color">
+            </div>
+
+            <div class="form-group">
+              <label for="breed">Breed of animal</label>
+              <input type="text" class="form-control" id="breed">
+            </div>
+
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+        <div id="buttons">
+          <button class="btn btn-primary notYet">Available</button>
+          <button class="btn btn-success home">Adopted</button>
+        </div>
+
+          <h2 id="All">Here are all of our pets:</h2>
+          <ul id="List1">
+          </ul>
+
+        <div id="Avail">
+          <h2>Pets Available:</h2>
+          <ul id="List2">
+          </ul>
+        </div>
+        
+        <div id="notAvail">
+          <h2>Pets Adopted:</h2>
+          <ul id="List3">
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <div id="pet-details">
+            <h2></h2>
+            <p>Name: <span class="name1"></span></p>
+            <p>Type: <span class="type1"></span></p>
+            <p>Breed: <span class="breed1"></span></p>
+            <p>Age: <span class="age1"></span></p>
+            <p>Color: <span class="color1"></span></p>
+            <p>Status: <span class="status1"></span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

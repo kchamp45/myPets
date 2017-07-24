@@ -1,0 +1,16 @@
+#pet-details, #Avail, #notAvail {
+  display: none;
+}
+
+.petName {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.petName:hover {
+  text-decoration: underline;
+}
+
+#buttons {
+  margin-top: 10px;
+}
